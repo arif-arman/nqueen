@@ -66,6 +66,15 @@ class SimpleBackTrack {
         return true;
     }
 
+    public boolean PlaceNQUeensFCMRV(int [] queenPosition, int N) {
+        int i = SelectRowMRV();
+
+    }
+
+    public int SelectRowMRV() {
+
+    }
+
     public void print(int [] queenPosition, int N) {
         for (int j=0;j<N;j++) System.out.print(queenPosition[j]+1  + " ");
         System.out.println();
@@ -78,7 +87,10 @@ class SimpleBackTrack {
             int [] t = allSolutions.get(i);
             print(t, N);
         }
+        allSolutions = null;
     }
+
+
 
     public String toString() {
         return "Backtrack";
